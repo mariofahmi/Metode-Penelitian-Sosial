@@ -1,4 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
+import logoMf from '../assets/logo-mf.png';
 import { 
   ShieldAlert, 
   CheckCircle2, 
@@ -106,7 +107,7 @@ export const DisclaimerModal: React.FC<DisclaimerModalProps> = ({
           <div className="relative z-10 flex items-start justify-between gap-3">
             <div className="flex items-center gap-2.5 sm:gap-3">
               <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-2xl bg-white flex items-center justify-center text-teal-900 shadow-lg shadow-teal-950/20 shrink-0 p-1 overflow-hidden ring-2 ring-teal-200/50">
-                <img src="/logo-mf.png" alt="Logo Mario Fahmi" className="w-full h-full object-contain" />
+                <img src={logoMf} alt="Logo Mario Fahmi" className="w-full h-full object-contain" />
               </div>
               <div className="min-w-0">
                 <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-emerald-400/15 border border-emerald-300/30 text-emerald-200 text-[10px] sm:text-[10.5px] font-bold uppercase tracking-wider mb-1">
@@ -135,7 +136,7 @@ export const DisclaimerModal: React.FC<DisclaimerModalProps> = ({
 
           <div className="mt-2.5 sm:mt-3 pt-2 sm:pt-2.5 border-t border-white/10 flex flex-col sm:flex-row sm:items-center justify-between gap-1.5 sm:gap-2 text-[11px] text-teal-200 font-semibold relative z-10">
             <div className="flex items-center gap-1.5">
-              <img src="/logo-mf.png" alt="MF" className="w-4 h-4 object-contain rounded shrink-0 bg-white/20 p-0.5" />
+              <img src={logoMf} alt="MF" className="w-4 h-4 object-contain rounded shrink-0 bg-white/20 p-0.5" />
               <span>Hak Cipta &amp; Rancang Bangun: <strong>MARIO FAHMI SYARIAL</strong></span>
             </div>
 

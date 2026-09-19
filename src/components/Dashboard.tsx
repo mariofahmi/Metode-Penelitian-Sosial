@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { ActiveTab } from '../types';
 import { sounds } from '../utils/soundEffects';
+import logoMf from '../assets/logo-mf.png';
 import { 
   Compass, 
   BookOpen, 
@@ -103,7 +104,7 @@ export const Dashboard: React.FC<DashboardProps> = ({
               Pusat Navigasi &amp; Peta Jalan Riset
             </div>
             <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/15 backdrop-blur-md text-[11px] sm:text-xs font-medium text-white border border-white/25 shadow-2xs">
-              <img src="/logo-mf.png" alt="MF" className="w-4 h-4 object-contain rounded shrink-0 bg-white/20 p-0.5" />
+              <img src={logoMf} alt="MF" className="w-4 h-4 object-contain rounded shrink-0 bg-white/20 p-0.5" />
               <span className="text-teal-200">Perancang:</span>
               <strong className="font-black text-white tracking-wide uppercase">MARIO FAHMI SYARIAL</strong>
             </div>

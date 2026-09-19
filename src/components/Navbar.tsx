@@ -1,5 +1,6 @@
 import React from 'react';
 import { ActiveTab } from '../types';
+import logoMf from '../assets/logo-mf.png';
 import { 
   BookOpen, 
   Layers, 
@@ -47,7 +48,7 @@ export const Navbar: React.FC<NavbarProps> = ({
           <div className="flex items-center gap-2 sm:gap-3 min-w-0">
             <div className="w-9 h-9 sm:w-11 sm:h-11 rounded-2xl bg-white flex items-center justify-center shadow-md shadow-teal-950/15 ring-2 ring-teal-200/80 shrink-0 p-1 overflow-hidden">
               <img 
-                src="/logo-mf.png" 
+                src={logoMf} 
                 alt="Logo Mario Fahmi" 
                 className="w-full h-full object-contain transform hover:scale-105 transition-transform" 
               />
@@ -63,7 +64,7 @@ export const Navbar: React.FC<NavbarProps> = ({
               </div>
               <div className="flex items-center gap-1 pt-0.5">
                 <span className="inline-flex items-center gap-1.5 font-medium text-teal-900 bg-teal-50/90 px-1.5 sm:px-2.5 py-0.5 rounded-lg border border-teal-200/80 text-[9.5px] sm:text-[11px] shadow-2xs truncate">
-                  <img src="/logo-mf.png" alt="MF" className="w-3.5 h-3.5 object-contain shrink-0" />
+                  <img src={logoMf} alt="MF" className="w-3.5 h-3.5 object-contain shrink-0" />
                   <span className="text-slate-500 hidden xs:inline">Perancang:</span>
                   <strong className="font-extrabold text-teal-950 uppercase tracking-wide truncate">MARIO FAHMI SYARIAL</strong>
                 </span>

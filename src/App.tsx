@@ -20,6 +20,7 @@ import {
   ShieldCheck, 
   Layers 
 } from 'lucide-react';
+import logoMf from './assets/logo-mf.png';
 
 export default function App() {
   const [activeTab, setActiveTab] = useState<ActiveTab>('dashboard');
@@ -175,7 +176,7 @@ export default function App() {
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <div className="flex items-center gap-3">
               <div className="w-9 h-9 rounded-xl bg-white border border-teal-200/80 shadow-xs flex items-center justify-center p-1 overflow-hidden shrink-0">
-                <img src="/logo-mf.png" alt="Logo Mario Fahmi" className="w-full h-full object-contain" />
+                <img src={logoMf} alt="Logo Mario Fahmi" className="w-full h-full object-contain" />
               </div>
               <div>
                 <p className="text-xs font-bold text-slate-900">
